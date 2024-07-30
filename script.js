@@ -24,3 +24,9 @@ let age = people.filter((people) => {
 })
 //Only the people under 28 years will appread in console.
 console.log(age);
+//maps in javaScript
+//The map method is crucial for data transformation tasks in JavaScript. It allows developers to manipulate arrays in a functional programming style, making code more readable and easier to maintain. By transforming data into the desired format without mutating the original data, map helps in writing cleaner and more predictable code.
+//Names of developer
+let names = people.filter((people) => people.profession === 'Developer').map(people => people.name)
+console.log(names);
+//i apply filter on the array to get developers and appy map to get their names
